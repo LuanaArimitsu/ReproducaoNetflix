@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: Arial;
+
+}
+
+/* Header */
+
+main {
+    width: 100%;
+    height: auto;
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(to bottom, black, transparent);
+    transition: background-color 0.3s;
+    z-index: 2;
+
+}
+
+header.scroll {
+    background-color: black;
+
+}
+
+#menuzao {
+    font-size: 15px
+}
+
+#menuzinho {
+    width: 65%;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: relative;
+    float: left;
+
+}
+
+#logo img {
+    width: 100px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+#menu_esquerdo a {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #cfcfcf;
+
+}
+
+#menu_esquerdo a:hover {
+    color: #fff;
+
+}
+
+#menu_direito a {
+    color: #cfcfcf;
+}
+
+#menu_direito {
+    width: 35%;
+    height: 80px;
+
+    position: relative;
+    float: left;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+
+
+}
+
+#menu_direito img {
+    height: 35px;
+}
+
+svg {
+    color: #fff;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#seta {
+    padding-right: 70px;
+}
+
+#painel {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+
+#titulo {
+    position: absolute;
+    z-index: 1;
+
+    color: #fff;
+}
+
+#titulo img {
+    height: 190px;
+    margin-left: 50px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 15px;
+    padding-top: 5px;
+    margin-left: 30px;
+}
+
+video {
+    width: 100%;
+}
+
+#titulo a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+
+}
+
+#botao_assistir {
+    position: relative;
+    float: left;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 3px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#botao_assistir a,
+#botao_assistir svg {
+
+    color: #000;
+}
+
+#botao_informacoes {
+    position: relative;
+    float: left;
+    background-color: #ffffff3d;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 3px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+#botao_informacoes a,
+svg {
+
+    color: #fff;
+}
+
+h3{
+    color: #fff;
+    font-family: Arial;
+    margin-top: 1rem;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#carrossel, #carrossel2 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  
+    overflow: hidden;
+}
+
+#container, #container2 {
+    position: absolute;
+    width: auto;
+    height: 100%;
+
+    display: inline-flex;
+    transition: 0.6s ease-in-out;
+}
+
+#container #item, #container2 #item2 {
+    position: relative;
+    margin: 0 7px;
+    width: 250px;
+    height: 100%;
+    background: gray;
+    z-index: 0;
+}
+
+#container #item img, #container2 #item2 img{
+    width: 100%;
+    height: 100%;
+}
+
+#btnleft, #btnleft2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#btnright, #btnright2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#container #limitador, #container2 #limitador2 {
+    position: absolute;
+    margin: 0 7px;
+    width: 150px;
+    height: 100%;
+    opacity: 0;
+    right: 0;
+    z-index: 1;
+    background: blue;
+}
+
+footer {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: var(--dark);
+    margin: 10px;
+  }
+
+  p{
+    color: #fff;
+  }
+
